@@ -9,6 +9,7 @@ on:
         description: A cheerful word
       log-level:
         type: choice
+        options:
           - info
           - warn
           - error
