@@ -18,4 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ inputs.greeting }}"
-      - run: echo "${{ inputs.log-level }} exit1"
+      - run: |
+          echo "${{ inputs.log-level }}"
+          exit 1
