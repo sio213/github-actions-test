@@ -1,8 +1,7 @@
 name: Workflow Error
-on: workflow_dispatch
+on: push
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "手動実行"
       - run: date
