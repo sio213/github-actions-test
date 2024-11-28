@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: echo "actor ${{ github.actor }}"
       - run: echo "run_id ${{ github.run_id }}"
-      - run: echo "head_reff ${{ github.head_ref }}"
+      - run: echo "head_ref ${{ github.head_ref }}"
       - run: echo "workspace ${{ github.workspace }}"
       - run: echo "repository ${{ github.repository }} "
       - run: echo "repository_owner ${{ github.repository_owner }}"
