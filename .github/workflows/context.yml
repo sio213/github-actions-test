@@ -10,4 +10,4 @@ jobs:
       - run: echo "workspace ${{ github.workspace }}"
       - run: echo "repository ${{ github.repository }} "
       - run: echo "repository_owner ${{ github.repository_owner }}"
-      - run: echo "event ${{ github.event }}"
+      - run: echo "event ${{ github.event.pull_request.title }}"
