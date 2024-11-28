@@ -11,3 +11,8 @@ jobs:
       - run: echo "repository ${{ github.repository }} "
       - run: echo "repository_owner ${{ github.repository_owner }}"
       - run: echo "event ${{ github.event.pull_request.title }}"
+      - run: echo "runner ${{ runner.os }}"
+      - run: echo "arch ${{ runner.arch }}"
+      - run: echo "temp ${{ runner.temp }}"
+      - run: echo "tool_cache ${{ runner.tool_cache }}"
+      - run: echo "debug ${{ runner.debug }}"
