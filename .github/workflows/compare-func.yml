@@ -10,3 +10,4 @@ jobs:
           STARTS_WITH_FUNC: ${{ startsWith('Hello', 'He') }}
           ENDS_WITH_FUNC: ${{ endsWith('Hello', 'lo') }}
       - run: echo "${{ contains(github.event.issue.labels.*.name, 'bug') }}"
+      - run: echo "${{ github.event.issue.labels }}"
