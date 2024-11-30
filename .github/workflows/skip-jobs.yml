@@ -1,0 +1,8 @@
+name: Skip jobs
+on: push
+jobs:
+  test:
+    if: ${{ github.actor == 'siox213' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run test"

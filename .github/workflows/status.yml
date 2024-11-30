@@ -1,0 +1,15 @@
+name: Status check functions
+on: push
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      # - run: exit 1
+      - run: echo "失敗メッセージ!"
+        if: ${{ failure() }}
+      - run: echo "成功しました！"
+        if: ${{ success() }}
+      - run: echo "キャンセルされました"
+        if: ${{ cancelled() }}
+      - run: echo "後処理です"
+        if: ${{ always() }}

@@ -1,0 +1,9 @@
+name: Naming
+on: push
+jobs:
+  print:
+    name: ログ出力
+    runs-on: ubuntu-latest
+    steps:
+      - name: Amazonログ
+        run: echo "Amazon logs 2024/11/11"
