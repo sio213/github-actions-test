@@ -1,7 +1,7 @@
 name: テスト
 on:
   pull_request:
-    path: ['go/**/*.go']
+    paths: ['go/**/*.go']
 jobs:
   test:
     runs-on: ubuntu-latest
