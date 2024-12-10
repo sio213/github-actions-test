@@ -7,6 +7,4 @@ jobs:
   sleep:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 131
-      - run: exit 0
-      - run: exit 1
+      - run: sleep 1
