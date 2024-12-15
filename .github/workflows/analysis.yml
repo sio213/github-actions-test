@@ -5,7 +5,7 @@ on:
 defaults:
   run:
     shell: bash
-# 古いワークフローはキャンセルする
+# 古いワークフローはキャンセルする?
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
